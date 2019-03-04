@@ -1,0 +1,20 @@
+//Cesar david lopez cazares// //1588987//
+problema 4
+function f=myfun1(x,Y)
+f=exp(x)/2*Y
+end
+
+function [x,Y]=call_myfun1()
+[tv1 f1] = ode45('myfun1',[0 5],1);
+plot(tv1,f1)
+end
+
+Problema 1
+function f=myfun1(t,Y)
+f=t/Y
+end
+
+function [t,Y]=call_myfun1()
+[tv1 f1] = ode45('myfun1',[0 5],1);
+plot(tv1,f1)
+end
